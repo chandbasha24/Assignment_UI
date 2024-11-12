@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.job-card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.job-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.job-card .badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.badge-hourly {
+    background-color: #34c759;
+}
+
+.badge-part-time {
+    background-color: #ff9500;
+}
+
+.job-card .rate {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.job-card h2 {
+    font-size: 20px;
+    margin: 40px 0 10px 0;
+}
+
+.job-card .company {
+    color: #007aff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.job-card .skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.job-card .skill {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #e0e7ff;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.job-card .skill.additional {
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+}
+
+.job-card .description {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 10px 0;
+}
+
+.job-card .view-job {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #007aff;
+    border-radius: 8px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
