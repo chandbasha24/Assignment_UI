@@ -4,44 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Listings</title>
+    
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Container for all job cards -->
     <div class="job-card-container">
+        
+        <!-- First job card -->
         <div class="job-card">
-            <div class="badge badge-hourly">hourly</div>
-            <div class="rate">$55 / hr</div>
-            <h2>UI/UX Designer</h2>
-            <div class="company"><i class="fas fa-building"></i> Epic Coders</div>
+            <div class="badge badge-hourly">hourly</div> <!-- Job type badge -->
+            <div class="rate">$55 / hr</div> <!-- Hourly rate -->
+            
+            <h2>UI/UX Designer</h2> <!-- Job title -->
+            
+            <!-- Company name with building icon -->
+            <div class="company">
+                <i class="fas fa-building"></i> Epic Coders
+            </div>
+            
+            <!-- Skills required for the job -->
             <div class="skills">
                 <div class="skill">UI</div>
                 <div class="skill">UX</div>
                 <div class="skill">photoshop</div>
-                <div class="skill additional">+4</div>
+                <div class="skill additional">+4</div> <!-- Additional skills not fully listed -->
             </div>
+            
+            <!-- Job description preview -->
             <div class="description">
-                We are looking for an experienced UI and UX designer to work on our new projects....................
+                We are looking for an experienced UI and UX designer to work on our new projects...
             </div>
+            
+            <!-- Link to view job details (triggers JavaScript function) -->
             <a href="#" class="view-job" onclick="viewJob('UI/UX Designer')">VIEW JOB</a>
         </div>
+
+        <!-- Second job card with similar structure -->
         <div class="job-card">
             <div class="badge badge-part-time">part-time</div>
             <div class="rate">$32 / hr</div>
+            
             <h2>Branding Expert</h2>
-            <div class="company"><i class="fas fa-building"></i> Hubstaff</div>
+            
+            <div class="company">
+                <i class="fas fa-building"></i> Hubstaff
+            </div>
+            
             <div class="skills">
                 <div class="skill">PHP</div>
                 <div class="skill">android</div>
                 <div class="skill">iOS</div>
                 <div class="skill additional">+2</div>
             </div>
+            
             <div class="description">
-                Looking for an experienced person to help us with rebranding our business. We are interested in a...
+                Looking for an experienced person to help us with rebranding our business...
             </div>
+            
             <a href="#" class="view-job" onclick="viewJob('Branding Expert')">VIEW JOB</a>
         </div>
+        
     </div>
+
+    <!-- External JavaScript file for functionality -->
     <script src="script.js"></script>
 </body>
 </html>
